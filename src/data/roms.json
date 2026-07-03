@@ -1,0 +1,89 @@
+{
+    "ROMS":
+    [
+        {
+            "id":   0,
+            "img":  "/roms/images/dangan.png",
+            "name": "Dangan",
+            "path": "/roms/games/dangan.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   1,
+            "img":  "/roms/images/pineapple kid.png",
+            "name": "Pineapple Kid",
+            "path": "/roms/games/pineapple kid.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   2,
+            "img":  "/roms/images/sheepitup.png",
+            "name": "Sheep It Up",
+            "path": "/roms/games/sheepitup.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   3,
+            "img":  "/roms/images/tobudx.png",
+            "name": "Tobudx",
+            "path": "/roms/games/tobudx.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   4,
+            "img":  "/roms/images/ucity.png",
+            "name": "U City",
+            "path": "/roms/games/ucity.gbc",
+            "tags": ["gbc"]   
+        },
+        {
+            "id":   5,
+            "img":  "/roms/images/2048.png",
+            "name": "2048",
+            "path": "/roms/games/2048.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   6,
+            "img":  "/roms/images/snake.png",
+            "name": "Snake",
+            "path": "/roms/games/snake.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   7,
+            "img":  "/roms/images/big2small.png",
+            "name": "Big2Small",
+            "path": "/roms/games/big2small.gb",
+            "tags": ["gb"]   
+        },
+                {
+            "id":   8,
+            "img":  "/roms/images/cgb-acid2.png",
+            "name": "CGB Rendering",
+            "path": "/roms/technical/cgb-acid2.gbc",
+            "tags": ["gbc"]   
+        },
+        {
+            "id":   9,
+            "img":  "/roms/images/dmg-acid2.png",
+            "name": "DMG Rendering",
+            "path": "/roms/technical/dmg-acid2.gb",
+            "tags": ["gb"]   
+        },
+                {
+            "id":   10,
+            "img":  "/roms/images/cpu_instrs.png",
+            "name": "CPU Testing",
+            "path": "/roms/technical/cpu_instrs.gb",
+            "tags": ["gb"]   
+        },
+        {
+            "id":   11,
+            "img":  "/roms/images/instr_timing.png",
+            "name": "Cycle Accuracy",
+            "path": "/roms/technical/instr_timing.gb",
+            "tags": ["gb"]   
+        }
+    ]
+}

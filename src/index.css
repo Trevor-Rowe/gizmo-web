@@ -1,0 +1,149 @@
+@import './styles/global.css';
+@import './styles/variables.css';
+
+@import "tailwindcss";
+
+.btn-collapse-closed
+{
+    min-width: var(--sidebar-width-collapsed);
+}
+
+.btn-collapse-open
+{
+    min-width: var(--sidebar-width);
+}
+
+.btn-danger
+{
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-primary);
+    font-style: italic;
+    font-size: 16pt;
+    padding: 2px;
+    transition: box-shadow 0.5s ease;
+}
+
+.btn-danger:not(:disabled):hover
+{
+    box-shadow:
+        0 0 5px  var(--color-danger),
+        0 0 10px var(--color-danger),
+        0 0 20px var(--color-danger),
+        0 0 40px var(--color-danger);
+    color: var(--color-danger);
+}
+
+.btn-danger:disabled
+{
+    background-color: var(--color-disabled);
+}
+
+
+.btn-directional
+{
+    min-width:    40px;
+    margin-left:  20px;
+    margin-right: 20px;
+}
+
+.btn-primary
+{
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-primary);
+    font-style: italic;
+    font-size: 16pt;
+    padding: 2px;
+    transition: box-shadow 0.5s ease;
+}
+
+.btn-primary:not(:disabled):hover
+{
+    box-shadow:
+        0 0 5px  var(--color-primary),
+        0 0 10px var(--color-primary),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-primary:disabled
+{
+    background-color: var(--color-disabled);
+}
+
+.btn-rounded
+{
+    border-radius: var(--button-radius);
+}
+
+/* Chrome / Edge */
+.scrollbar 
+{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-background);
+}
+
+.scrollbar::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track 
+{
+    background: var(--color-background);
+}
+
+.scrollbar::-webkit-scrollbar-thumb 
+{
+    background: var(--color-primary);
+    border-radius: 9999px;
+    border: 2px solid var(--color-backgorund);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover 
+{
+    background: var(--color-primary-hover);
+}
+
+.glow 
+{
+    box-shadow:
+        0 0 5px  var(--color-primary),
+        0 0 10px var(--color-primary),
+        0 0 20px var(--color-primary),
+        0 0 40px var(--color-primary);
+        
+    transition: box-shadow 0.2s ease;
+}
+
+.scrollbar-left 
+{
+    direction: rtl;
+}
+
+.scrollbar-left > * 
+{
+    direction: ltr;
+}
+
+.slider 
+{
+    height: 6px;
+    width: 80%;
+}
+
+.slider::-webkit-slider-thumb 
+{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    box-shadow:
+        0 0 4px var(--color-primary),
+        0 0 12px var(--color-primary);
+
+    cursor: pointer;
+}

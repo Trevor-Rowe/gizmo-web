@@ -1,0 +1,35 @@
+:root
+{
+    --button-radius: 4px;
+    
+    --color-primary: #1d54ca;
+    --color-danger: rgb(165, 7, 7);
+    --color-disabled: rgb(80, 79, 79);
+
+    --color-background: #151516;
+    --color-surface: #27272a;
+    --color-surface-secondary: #37373b;
+
+    --color-text: #a1a1aa;
+
+    --sidebar-width: 250px;
+    --sidebar-width-collapsed: 50px;
+}
+
+[data-theme="light"]
+{
+    --button-radius: 4px;
+
+    --color-primary: #1d54ca;
+    --color-danger: #b91c1c;
+    --color-disabled: #bdbdbd;
+
+    --color-background: #c2c0c0;
+    --color-surface: #d9d4d4;
+    --color-surface-secondary: #f2eded;
+
+    --color-text: #52525b;
+
+    --sidebar-width: 250px;
+    --sidebar-width-collapsed: 50px;
+}

@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.gizmo-sidebar 
+{
+    min-height: 0;
+    min-width: var(--sidebar-width);
+    padding-top: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) #18181b;
+}
+
+.gizmo-sidebar > *
+{
+    text-align: center;
+    width: 100%;
+}
+
+.gizmo-sidebar > * > button
+{
+    width: 90%;
+}
