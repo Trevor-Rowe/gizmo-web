@@ -1,1 +1,1 @@
-# This project is leverages the Gizmo SDK Emulation Library for a Browser-Based Experience!
+# Experience the GameBoyColor Within Your Browser!
