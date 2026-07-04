@@ -74,7 +74,9 @@ function download_bytes(bytes: Uint8Array, file_name: string): void
 }
 
 export function Gizmo(props: GizmoProps): React.JSX.Element
-{    
+{
+    const   rtc_counter = useRef<number>(0);
+
     // Video
     const animation_ref = useRef<number>(0);
     const    canvas_ref = useRef<HTMLCanvasElement>(null);
@@ -127,6 +129,18 @@ export function Gizmo(props: GizmoProps): React.JSX.Element
 
             ctx.putImageData(image_data, 0, 0);
         }
+
+        function tick_rtc_clock()
+        {
+            rtc_counter.current += 1;
+            
+            if (rtc_counter.current < 60)
+                return;
+
+            rtc_counter.current = 0;
+
+            module._advance_gizmo_rtc_second(props.emu_ref.current);
+        }
         
         // Animation Driving
 
@@ -155,6 +169,7 @@ export function Gizmo(props: GizmoProps): React.JSX.Element
                     module._run_gizmo_frame(emu, true);
                 }
 
+                tick_rtc_clock();
                 module._run_gizmo_frame(emu, false);
                 props.feed_audio_samples(735);
                 accumulator -= FRAME_TIME_MS;
