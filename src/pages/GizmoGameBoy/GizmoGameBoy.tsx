@@ -166,6 +166,7 @@ export function Gizmo(props: GizmoProps): React.JSX.Element
                     if (++frames >= props.speed_ref.current)
                         break;
                     
+                    tick_rtc_clock();
                     module._run_gizmo_frame(emu, true);
                 }
 
