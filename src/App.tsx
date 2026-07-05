@@ -11,7 +11,7 @@ import { DEFAULT_SPEED, DEFAULT_VOLUME, MAX_TURBO, MAX_VOLUME } from './componen
 import type { SaveStateSlot } from './components/sidebars/SaveStateSidebar/SaveStateSidebar.tsx';
 import { Controls } from './pages/Directions/Directions.tsx';
 
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 import './App.css'
 
