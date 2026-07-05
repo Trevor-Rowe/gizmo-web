@@ -11,6 +11,8 @@ import { DEFAULT_SPEED, DEFAULT_VOLUME, MAX_TURBO, MAX_VOLUME } from './componen
 import type { SaveStateSlot } from './components/sidebars/SaveStateSidebar/SaveStateSidebar.tsx';
 import { Controls } from './pages/Directions/Directions.tsx';
 
+import { Analytics } from "@vercel/analytics/next"
+
 import './App.css'
 
 const STEREO_FRAME_CAPACITY = 4096;
@@ -241,6 +243,7 @@ function App(): React.JSX.Element
           theme={theme}
           set_theme={set_theme}
         />
+        <Analytics />
         <Routes>
           <Route 
             path="/"
